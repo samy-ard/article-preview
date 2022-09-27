@@ -1,0 +1,259 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--heading: 	hsl(217, 19%, 35%);
+	--share-bg: hsl(217, 19%, 35%);
+	--body: 		hsl(214, 17%, 51%);
+	--button: 	hsl(212, 23%, 69%);
+	--main-bg: 	hsl(210, 46%, 95%);
+	--card-bg: 	hsl(255, 100%, 100%);
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	color: var(--body);
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 1.538461;
+	font-family: 'Manrope', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: var(--heading);
+	font-weight: 700;
+	margin: 0 0 1rem;
+	letter-spacing: 0.25px;
+}
+
+p {
+	font-size: 1rem;
+	margin: 0 0 1em;
+}
+
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+
+.btn {
+	cursor: pointer;
+	display: inline-block;
+	padding: 0.692307rem 0.615384rem;
+	border-radius: 100%;
+	background-color: var(--main-bg);
+}
+
+.btn-icon {
+	display: block;
+}
+
+.share-btn {
+	position: relative;
+	z-index: 5;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.row-centered {
+	align-items: center;
+	justify-content: center;
+}
+
+.row-edges {
+	align-items: center;
+	justify-content: space-between;
+}
+
+.site-main {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 6rem 1.76923rem;
+	background-color: var(--main-bg);
+}
+
+.card {
+	position: relative;
+	width: 100%;
+	max-width: 25.153846rem;
+	border-radius: 0.615384rem;
+	background-color: var(--card-bg);
+	box-shadow: 0 0.1rem 3rem 0 rgba(0,0,0,.15);
+}
+
+.card-image {
+	flex: 0 0 100%;
+	max-width: 100%;
+	border-top-left-radius: 0.615384rem;
+	border-top-right-radius: 0.615384rem;
+	background-size: cover;
+	background-position: center 18%;
+	background-repeat: no-repeat;
+	background-image: url('./images/drawers.jpg');
+	height: 15.53846153846154rem;
+}
+
+.card-body {
+	position: relative;
+	z-index: 1;
+}
+
+.card-text {
+	padding: 2.76923rem 2.538461rem 1rem;
+}
+
+.card-title {
+	font-size: 1.230769rem;
+}
+
+.card-excerpt {
+	margin-bottom: 0;
+	padding-right: 0.538461rem;
+}
+
+.card-footer {
+	padding: 1.615384rem 2.538461rem 1.615384rem;
+	border-bottom-left-radius: 0.615384rem;
+	border-bottom-right-radius: 0.615384rem;
+}
+
+.card-author {
+	display: flex;
+}
+
+.card-avatar {
+	display: block;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 100%;
+}
+
+.card-author-info {
+	padding-right: 3.384615rem;
+}
+
+.card-name {
+	font-size: 1rem;
+	margin-bottom: 0;
+}
+
+.card-date {
+	color: var(--button);
+}
+
+.card-share {
+	position: absolute;
+	top: auto;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+	padding: 1.692307rem 2.538461rem;
+	background-color: var(--share-bg);
+	border-bottom-left-radius: 0.615384rem;
+	border-bottom-right-radius: 0.615384rem;
+}
+
+.card-share .share-btn {
+	background-color: var(--body);
+}
+
+.card-share-title {
+	letter-spacing: 0.384615rem;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	line-height: 3;
+}
+
+.card-share-links {
+	margin-left: 1.230769rem;
+}
+
+.card-share-links-item {
+	margin-right: 1.230769rem;
+}
+
+.card-share-links-item:last-child {
+	margin-right: 0;
+}
+
+.card-share-links-item img {
+	display: block;
+}
+
+@media screen and (min-width: 992px) {
+	.card {
+		max-width: 56.153845rem;
+	}
+
+	.card-image {
+		flex: 0 0 39.0410958%;
+		max-width: 39.0410958%;
+		height: auto;
+		border-top-right-radius: 0;
+		border-bottom-left-radius: 0.615384rem;
+		background-position: left center;
+	}
+
+	.card-body {
+		flex: 0 0 60.9589041%;
+		max-width: 60.9589041%;
+		padding-left: 3.307692rem;
+		padding-right: 3.307692rem;
+	}
+
+	.card-text {
+		padding: 2.461538rem 0 0;
+	}
+
+	.card-title {
+		font-size: 1.53846rem;
+		line-height: 1.4;
+	}
+
+	.card-footer {
+		padding: 1.461538rem 0 2.538461rem;
+	}
+
+	.card-author-info {
+		padding-left: 1.230769rem;
+	}
+
+	.card-share {
+		top: 46%;
+		left: 59%;
+		right: auto;
+		bottom: auto;
+		width: 19.076923rem;
+		border-radius: 0.615384rem;
+		padding: 0.615384rem 2.692307rem;
+		box-shadow: 0 0.5rem 0.5rem 0.2rem rgba(0,0,0,0.15);
+	}
+
+	.card-share-dialog {
+		position: relative;
+		z-index: 3;
+	}
+
+	.card-share-dialog:after {
+		content: '';
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 0;
+		height: 0;
+		z-index: 4;
+		border-top: 1.461538rem solid var(--share-bg);
+		border-left: 1.615384rem solid transparent;
+		border-right: 1.615384rem solid transparent;
+	}
+}
