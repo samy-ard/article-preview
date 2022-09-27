@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [github](https://github.com/samy-ard/article-preview/)
-- Live Site URL: [github page](https://samy-ard/github.io/article-preview/)
+- Live Site URL: [github page](https://samy-ard.github.io/article-preview/)
 
 ## My process
 
